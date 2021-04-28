@@ -1,0 +1,687 @@
+* {
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-size: 12px;
+    outline: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #111111;
+    min-height: 100%;
+    width: 100%;
+    min-width: 300px;
+    position: absolute;
+    padding-bottom: 120px;
+}
+
+/*--- Início das Configurações genéricas ---*/
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.oculto {
+    display: none;
+}
+
+.middle {
+    margin: 0px auto;
+    max-width: 660px;
+    display: block;
+}
+
+/*--- Fim das Configurações genéricas ---*/
+#conteudo-pag-cadastro {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 120px;
+}
+
+#header-cadastro {
+    margin: 25px 0 30px;
+}
+
+#header-cadastro h1 {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#header-cadastro h2,
+#header-cadastro h2 * {
+    color: #F06A15;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px;
+}
+
+#bloco-01 {
+    min-width: 300px;
+}
+
+#bloco-01 .botao-rede-social {
+    width: 250px;
+    height: 32px;
+    margin: 28px auto 0px;
+    text-align: center;
+}
+
+#bloco-01 .botao-rede-social#botao-facebook {
+}
+
+#bloco-01 .botao-rede-social#botao-gplus {
+    margin-bottom: 40px;
+}
+
+#bloco-01 p,
+#bloco-03 p,
+#bloco-03 * {
+    text-align: center;
+    font-size: 18px;
+}
+
+#bloco-01 #logos,
+#bloco-03 #logos {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#bloco-02 {
+    min-width: 300px;
+}
+
+#bloco-02 form,
+#bloco-02 #logado {
+    background-color: #272727;
+    padding: 20px;
+    margin: 0 auto;
+    width: 270px;
+    min-height: 191px;
+}
+
+#bloco-02 form section {
+    position: relative;
+}
+
+#bloco-02 form section input {
+    background-color: #3F3F3F;
+    border: 1px solid #0f0f0f;
+    height: 30px;
+    transition: border 1s ease;
+    padding: 0 7px;
+}
+
+#bloco-02 form section input[type="text"],
+#bloco-02 form section input[type="password"] {
+    width: 227px;
+    font-size: 14px;
+}
+
+#bloco-02 form section input[type="number"] {
+    width: 62px;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+#bloco-02 form section input:active {
+    border: 1px solid #EB5C10;
+}
+
+#bloco-02 form section input.erro {
+    border: 1px solid #dd0000 !important;
+}
+
+#bloco-02 form section input#ano {
+    width: 67px;
+}
+
+#bloco-02 form section input#dia {
+    margin-left: 0px;
+}
+
+#bloco-02 form section .info {
+    top: 4px;
+    right: -182px;
+    width: 170px;
+    padding: 7px 10px;
+    background-color: #272727;
+    border: 1px solid #EB5C10;
+    border-radius: 0px 0px 10px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+#bloco-02 form section .info .ponta {
+    width: 31px;
+    height: 25px;
+    position: absolute;
+    top: -2px;
+    left: -13px;
+}
+
+#bloco-02 form section .info .ponta .borda {
+    border-color: transparent #EB5C10 transparent transparent;
+    border-style: solid;
+    border-width: 13px;
+    height: 0;
+    left: -13px;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+
+#bloco-02 form section .info .ponta .meio {
+    border-color: transparent #272727 transparent transparent;
+    border-style: solid;
+    border-width: 11px;
+    font-size: 0;
+    height: 0;
+    left: -10px;
+    position: absolute;
+    top: 2px;
+    width: 0;
+}
+
+#bloco-02 form section .info .ponta .borda-oculta {
+    background-color: #272727;
+    height: 22px;
+    left: 12px;
+    line-height: 0;
+    position: absolute;
+    top: 2px;
+    width: 1px;
+}
+
+#bloco-02 form section .info p {
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+#bloco-02 form section .info .requisitos {
+    color: #EB5C10;
+    margin: 0px 0 2px 0;
+    text-align: left;
+    font-size: 11px;
+    line-height: 1.1;
+}
+
+#bloco-02 form section .info .erro {
+    color: #ff0808;
+    padding: 0 0 8px 0;
+    text-align: center;
+    display: none;
+}
+
+#bloco-02 form section#box-captcha {
+    height: 58px;    /*margin-bottom: -4px;*/
+}
+
+#bloco-02 form section#box-captcha .g-recaptcha {
+    transform: scale(0.75);
+    transform-origin: 0 0;
+}
+
+/*--- < 1020px ---*/
+@media only screen and (max-width:1020px) {
+    form section .info {
+        left: 35px;
+        right: 0;
+        top: 38px !important;
+        width: 205px !important;
+    }
+
+    form section .info .ponta {
+        transform: rotate(90deg);
+        left: 10px !important;
+        top: -10px !important;
+    }
+
+    form section .info#info-dia .ponta {
+        left: 5px !important;
+    }
+
+    form section .info#info-mes .ponta {
+        left: 43px !important;
+    }
+
+    form section .info#info-ano .ponta {
+        left: 123px !important;
+    }
+
+}
+
+#bloco-02 form #group-button {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#bloco-02 form #group-button button {
+    background-color: #f06a15;
+    border: medium none;
+    font-size: 22px;
+    padding: 8px 0;
+    text-align: center;
+    transition: background-color 300ms ease 0s;
+    width: 228px;
+}
+
+#bloco-02 form #group-button button:hover {
+    background-color: #CA4B00;
+}
+
+#bloco-02 form #group-button button:active {
+    box-shadow: 2px 2px 4px #EB5C10 inset;
+}
+
+#bloco-02 form #recuperar-senha {
+    text-align: right;
+    color: #fff;
+    width: 100%;
+    display: block;
+    padding: 3px 0 0;
+}
+
+#bloco-02 #logado h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#bloco-02 #logado p {
+    margin-bottom: 30px;
+}
+
+#bloco-02 #logado #group-button {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#bloco-02 #logado #group-button button {
+    width: 228px;
+    text-align: center;
+    transition: background-color 300ms ease;
+    background-color: #F06A15;
+    border: none;
+    padding: 3px 0;
+}
+
+#bloco-02 #logado #group-button button:hover {
+    background-color: #CA4B00;
+}
+
+#bloco-02 #logado #group-button button:active {
+    box-shadow: 2px 2px 4px #EB5C10 inset;
+}
+
+#bloco-02 #logado #group-button button .ico {
+    width: 40px;
+    height: 32px;
+    background-image: url("../img/ongame_img_seta.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    transform: rotate(180deg);
+}
+
+#bloco-02 #logado #group-button button span {
+    font-size: 22px;
+    height: 32px;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    margin-left: 10px;
+}
+
+#termos {
+    line-height: 12px;
+    margin: 10px auto 0px;
+    padding: 0 6px;
+    text-align: center;
+    width: 270px;
+    font-size: 11px;
+}
+
+#bloco-03 {
+}
+
+#bloco-03 p {
+    margin-top: 30px;
+}
+
+#bloco-03 #logos {
+    margin-bottom: 20px;
+}
+
+/* --- Início - Footer padrao landingpage --- */
+footer.footer-landingpage {
+    background-color: #000;
+    height: 100px;
+    text-align: center;
+    width: 100%;
+    color: #FFF;
+    margin-top: 50px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+}
+
+footer.footer-landingpage #box-assinatura {
+    width: 50%;
+    height: 100px;
+    float: left;
+    text-align: center;
+}
+
+footer.footer-landingpage #box-assinatura .box-logos {
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+}
+
+footer.footer-landingpage #box-assinatura .logo-ongame {
+    background: url('../img/logo_ongame.png') no-repeat;
+    height: 24px;
+    width: 78px;
+    display: block;
+    margin: 24px auto 0px;
+    background-position: center;
+}
+
+footer.footer-landingpage .copyright {
+    width: 160px;
+    height: 30px;
+    font-family: arial, Tahoma, sans-serif;
+    font-size: 8pt;
+    line-height: 1.2;
+    color: #fff;
+    margin: 2px auto;
+    text-align: center;
+    display: block;
+}
+
+#ak footer.footer-landingpage .copyright#hanbisoft,
+footer.footer-landingpage#footer-ak .copyright#hanbisoft {
+    display: block;
+}
+
+#co footer.footer-landingpage .copyright#neoact,
+footer.footer-landingpage#footer-co .copyright#neoact {
+    display: block;
+}
+
+#m2 footer.footer-landingpage .copyright#webzen-ymir,
+footer.footer-landingpage#footer-m2 .copyright#webzen-ymir {
+    display: block;
+}
+
+#pb footer.footer-landingpage .copyright#zepetto,
+footer.footer-landingpage#footer-pb .copyright#zepetto {
+    display: block;
+}
+
+#z4 footer.footer-landingpage .copyright#infovine,
+footer.footer-landingpage#footer-z4 .copyright#infovine {
+    display: block;
+}
+
+#wd footer.footer-landingpage .copyright#hanbisoft,
+footer.footer-landingpage#footer-wd .copyright#hanbisoft {
+    display: block;
+}
+
+footer.footer-landingpage #box-redes-sociais {
+    float: left;
+    width: 50%;
+    height: 100px;
+}
+
+footer.footer-landingpage ul.ul-redes-sociais {
+    height: 38px;
+    width: 176px;
+    margin: 0px;
+    list-style: outside none none;
+    display: block;
+    margin: 25px auto 0;
+    padding: 0px;
+}
+
+footer.footer-landingpage ul.ul-redes-sociais li {
+    float: left;
+    width: 38px;
+    height: 38px;
+    margin: 3px 3px;
+}
+
+footer.footer-landingpage ul.ul-redes-sociais li a {
+    float: left;
+    width: 38px;
+    height: 38px;
+    background-image: url('../img/redes_sociais.png');
+}
+
+footer.footer-landingpage ul.ul-redes-sociais li.face a {
+    display: block;
+}
+
+footer.footer-landingpage ul.ul-redes-sociais li.face a:hover {
+    background-position: 0 -38px
+}
+
+footer.footer-landingpage ul.ul-redes-sociais li.twitter a {
+    background-position: -38px 0px;
+}
+
+footer.footer-landingpage ul.ul-redes-sociais li.twitter a:hover {
+    background-position: -38px -38px;
+}
+
+footer.footer-landingpage ul.ul-redes-sociais li.youtube a {
+    background-position: -76px 0px;
+}
+
+footer.footer-landingpage ul.ul-redes-sociais li.youtube a:hover {
+    background-position: -76px -38px;
+}
+
+footer.footer-landingpage ul.ul-redes-sociais li.instagram a {
+    background-position: -114px 0px;
+}
+
+footer.footer-landingpage ul.ul-redes-sociais li.instagram a:hover {
+    background-position: -114px -38px;
+}
+
+footer.footer-landingpage .classificacao {
+    background-repeat: no-repeat;
+    float: left;
+    width: 360px;
+    height: 65px;
+    margin-top: 20px;
+    margin-left: 34px;
+    background-repeat: no-repeat;
+}
+
+#ak footer.footer-landingpage .classificacao,
+footer.footer-landingpage#footer-ak .classificacao {
+    background-image: url('../img/footer/classificacao/classificacao_aika.png');
+}
+
+#co footer.footer-landingpage .classificacao,
+footer.footer-landingpage#footer-co .classificacao {
+    background-image: url('../img/footer/classificacao/classificacao_chaos.png');
+}
+
+#m2 footer.footer-landingpage .classificacao,
+footer.footer-landingpage#footer-m2 .classificacao {
+    background-image: url('../img/footer/classificacao/classificacao_metin2.png');
+}
+
+#pb footer.footer-landingpage .classificacao,
+footer.footer-landingpage#footer-pb .classificacao {
+    background-image: url('../img/footer/classificacao/classificacao_pointblank.png');
+}
+
+#z4 footer.footer-landingpage .classificacao,
+footer.footer-landingpage#footer-z4 .classificacao {
+    background-image: url('../img/footer/classificacao/classificacao_zone4.png');
+}
+
+#wd footer.footer-landingpage .classificacao,
+footer.footer-landingpage#footer-wd .classificacao {
+    background-image: url('../img/footer/classificacao/classificacao_wyd.png');
+}
+
+/* --- Fim - Footer padrao landingpage --- */
+@media only screen and (max-width:640px) {
+    body {
+    }
+
+    section#bloco1 {
+        width: 100%;
+        float: right;
+    }
+
+    .bloco2 {
+        float: left;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:360px) {
+    footer.footer-landingpage ul.ul-redes-sociais {
+        height: 95px;
+        width: 90px;
+        margin-top: 7px;
+    }
+
+    footer.footer-landingpage #box-assinatura {
+        width: 60%;
+    }
+
+    footer.footer-landingpage #box-redes-sociais {
+        width: 40%;
+    }
+
+}
+
+#erro {
+    color: #dd0000;
+    font-size: 14px;
+    padding: 0 0 15px;
+    text-align: center;
+}
+
+#sucesso {
+    color: green;
+    font-size: 14px;
+    padding: 0 0 15px;
+    text-align: center;
+}
+
+/*--- Início pag castro finalizado ---*/
+#pag-cadastro-finalizado h2 {
+    color: #f06a15;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0;
+}
+
+#pag-cadastro-finalizado h3 {
+    margin: 6px 0 40px 0;
+    font-size: 19px;
+}
+
+.box-img {
+    text-align: center;
+}
+
+.box-img img {
+    max-width: 90%;
+}
+
+#box-bottom {
+    margin-top: 40px;
+}
+
+#box-bottom .col-sm-7 {
+    padding: 0px;
+}
+
+#box-bottom span {
+    float: left;
+    padding-bottom: 3px;
+    font-style: italic;
+}
+
+#box-bottom span:last-child {
+    padding-bottom: 15px;
+}
+
+#box-bottom .btn-revenviar-email {
+    background-color: #f06a15;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px;
+    margin: 0px auto 0px;
+    display: block;
+    max-width: 216px;
+    font-size: 10pt;
+}
+
+#box-bottom .btn-revenviar-email:hover {
+    text-decoration: none;
+}
+
+/*--- Fim pag castro finalizado ---*/
+#box-espacamento {
+    height: 52px;
+    width: 100%;
+}
+
+/* --- Início Botão do Google --- */
+#customBtn {
+    background: none repeat scroll 0 0 #dd4b39;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    white-space: nowrap;
+    width: 160px;
+}
+
+#customBtn:hover {
+    background: #e74b37;
+    cursor: pointer;
+}
+
+span.icon {
+    background: url("https://developers.google.com/+/images/branding/btn_red_32.png") no-repeat scroll 2px 1px / 19px auto transparent;
+    border-right: 1px solid #bb3f30;
+    display: inline-block;
+    height: 22px;
+    vertical-align: middle;
+    width: 23px;
+}
+
+span.buttonText {
+    display: inline-block;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    padding-left: 4px;
+    vertical-align: middle;
+}
+
+/* --- Fim Botão do Google --- */

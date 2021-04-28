@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0062)http://login.ongame.com.br/?url=http://pb.ongame.com.br/forum/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Login Ongame</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="É super fácil, rápido e grátis! :)">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./Login Ongame_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Login Ongame_files/css" type="text/css">
+    <link rel="stylesheet" href="./Login Ongame_files/base.css">
+    <link rel="stylesheet" href="./Login Ongame_files/font-awesome.min.css">
+    <script async="" src="./Login Ongame_files/analytics.js"></script><script type="text/javascript" async="" src="./Login Ongame_files/recaptcha__pt_br.js"></script><script src="./Login Ongame_files/jquery-2.1.4.min.js"></script>
+    <script src="./Login Ongame_files/api.js"></script>
+    <script src="./Login Ongame_files/ga.js"></script>
+    <script src="./Login Ongame_files/login.js"></script>
+    <script src="./Login Ongame_files/barra.js"></script>
+    <script src="./Login Ongame_files/footer.js"></script>
+</head>
+<body id="og"><div id="barra-ongame"><style>
+#barra-ongame,#barra-ongame *{box-sizing:unset!important}#barra-ongame{background:rgba(0,0,0,0.7) none repeat scroll 0 0;border-bottom:2px solid #ff7e00;height:30px;position:fixed;width:100%;z-index:50}#barra-ongame *{padding:0;margin:0;text-decoration:none;list-style:none;font-size:12px;line-height:inherit}#barra-ongame>.barra-ongame-centro{margin:auto;max-width:1210px;position:relative}#barra-ongame>.barra-ongame-centro>.barra-ongame-logo{position:absolute;left:10px;top:6px;font-size:inherit!important}#barra-ongame>.barra-ongame-centro>.barra-ongame-logo>a{float:left;padding:2px}#barra-ongame>.barra-ongame-centro>.barra-ongame-logo>a>img{width:80px;float:left}#barra-ongame>.barra-ongame-centro>.barra-ongame-jogos{transition:300ms ease;left:140px;position:absolute;top:6px}#barra-ongame>.barra-ongame-centro>.barra-ongame-jogos>a{color:#ffffff;font-size:12px;font-family:'Open Sans',sans-serif;text-transform:uppercase;color:#fff;line-height:17px;padding:1px 3px;transition:300ms ease}#barra-ongame>.barra-ongame-centro>.barra-ongame-jogos>a:hover{color:#FF7E00;transition:color 300ms ease}#barra-ongame>.barra-ongame-centro>.barra-ongame-jogos>a>i{color:inherit}#barra-ongame>.barra-ongame-centro>.barra-ongame-jogos>div{background:#ff7e00 none repeat scroll 0 0;border:2px solid #ff7e00;top:24px;margin-left:-8px;position:absolute;display:none;min-width:223px;transition:margin 300ms ease}#barra-ongame>.barra-ongame-centro>.barra-ongame-jogos>div>ul{float:left}#barra-ongame>.barra-ongame-centro>.barra-ongame-jogos>div>ul>li>a{color:#000;display:block;font-family:"Open Sans",sans-serif;font-size:13px;line-height:16px;margin:0 2px 0 0;padding:4px;transition:background-color 300ms ease}#barra-ongame>.barra-ongame-centro>.barra-ongame-jogos>div>ul>li>a:hover{background:#CF6500;transition:background-color 300ms ease}#barra-ongame>.barra-ongame-centro>.barra-ongame-jogos>div img{border:2px solid #000000;display:inline-block;float:right;line-height:0;margin:0;padding:0;width:140px}#barra-ongame>.barra-ongame-centro>.barra-ongame-jogos>div>span{clear:both;display:block}#barra-ongame>.barra-ongame-centro>.barra-ongame-botoes{position:absolute;right:10px;top:4px}#barra-ongame>.barra-ongame-centro>.barra-ongame-botoes>a{border:1px solid #ff7e00;color:#ff7e00;font-family:"Open Sans",sans-serif;font-size:13px;line-height:18px;float:left;margin-left:4px;padding:1px 6px 1px 4px;transition:all 300ms ease}#barra-ongame>.barra-ongame-centro>.barra-ongame-botoes>a:hover{color:#000;background:#FF7E00;transition:all 300ms ease}#barra-ongame>.barra-ongame-centro>.barra-ongame-botoes a i.fa{color:#ff7e00;margin:0 3px 0 0!important;text-align:center;width:12px;transition:color 300ms ease}#barra-ongame>.barra-ongame-centro>.barra-ongame-botoes a:hover i.fa{color:#000000;transition:color 300ms ease}#barra-ongame>.barra-ongame-centro>.barra-ongame-botoes .logado{display:none}#barra-ongame>.barra-ongame-centro>.barra-ongame-botoes>div{background:#ff7e00 none repeat scroll 0 0;border:2px solid #ff7e00;display:none;position:absolute;right:0;top:27px;width:160px}#barra-ongame>.barra-ongame-centro>.barra-ongame-botoes>div>ul{float:left;padding:4px 0}#barra-ongame>.barra-ongame-centro>.barra-ongame-botoes>div>ul>li>a{color:#000;display:block;font-family:"Open Sans",sans-serif;font-size:13px;line-height:18px;margin:0 4px;padding:4px 3px;transition:background-color 300ms ease}#barra-ongame>.barra-ongame-centro>.barra-ongame-botoes>div>ul>li>a:hover{background:#CF6500;transition:background-color 300ms ease}#barra-ongame>.barra-ongame-centro>.barra-ongame-botoes>div>ul>li>a .fa{color:#000000!important;width:16px;transition:color 300ms ease}#barra-ongame>.barra-ongame-centro>.barra-ongame-botoes>div>ul>li>a:hover .fa{color:#000000;transition:color 300ms ease}#barra-ongame>.barra-ongame-centro>.barra-ongame-botoes>div>span{clear:both;display:block}@media (max-width:440px){#barra-ongame>.barra-ongame-centro>.barra-ongame-jogos{transition:300ms ease;left:120px}}@media (max-width:359px){#barra-ongame>.barra-ongame-centro>.barra-ongame-jogos{transition:300ms ease;left:100px}#barra-ongame>.barra-ongame-centro>.barra-ongame-jogos>a{font-size:10px;transition:300ms ease}#barra-ongame>.barra-ongame-centro>.barra-ongame-jogos>div{margin-left:-12px;transition:margin 300ms ease}}@media (max-width:320px){#barra-ongame>.barra-ongame-centro>.barra-ongame-jogos{transition:300ms ease;left:100px}#barra-ongame>.barra-ongame-centro>.barra-ongame-jogos>div{margin-left:-40px;transition:margin 300ms ease}}
+</style>
+<div class="barra-ongame-centro">
+    <div class="barra-ongame-logo" title="Ongame">
+        <a href="http://ongame.com.br/" alt="Ongame">
+            <img src="./Login Ongame_files/ongame.png" alt="">
+        </a>
+    </div>
+    <div class="barra-ongame-jogos">
+        <a href="javascript:void(0)">
+            Jogos
+            <i class="fa fa-chevron-down"></i>
+        </a>
+        <div>
+            <ul><li><a href="http://pb.ongame.com.br/" title="Point Blank" target="_blank" data-imagem="http://imagem.ongame.com.br/portal/barra/point-blank.jpg"><i class="fa undefined"></i>Point Blank</a></li><li><a href="http://m2.ongame.com.br/" title="Metin 2" target="_blank" data-imagem="http://imagem.ongame.com.br/portal/barra/metin-2.jpg"><i class="fa undefined"></i>Metin 2</a></li><li><a href="http://aika.ongame.com.br/" title="Aika" target="_blank" data-imagem="http://imagem.ongame.com.br/portal/barra/aika.jpg"><i class="fa undefined"></i>Aika</a></li><li><a href="http://wyd.ongame.com.br/" title="WYD" target="_blank" data-imagem="http://imagem.ongame.com.br/portal/barra/wyd.jpg"><i class="fa undefined"></i>WYD</a></li><li><a href="http://chaos.ongame.com.br/" title="Chaos" target="_blank" data-imagem="http://imagem.ongame.com.br/portal/barra/chaos.jpg"><i class="fa undefined"></i>Chaos</a></li></ul>
+            <img src="./Login Ongame_files/point-blank.jpg" alt="">
+            <span></span>
+        </div>
+    </div>
+    <div class="barra-ongame-botoes"><a href="http://login.ongame.com.br/?url=http://login.ongame.com.br/?url=http://pb.ongame.com.br/forum/" title="Entrar" target="" class="login">                     <i class="fa fa-lock"></i>Entrar</a><a href="http://cadastro.ongame.com.br/" title="Cadastrar" target="_blank" class="cadastro">                     <i class="fa fa-plus"></i>Cadastrar</a><a href="http://login.ongame.com.br/?url=http://pb.ongame.com.br/forum/#" title="" target="" class="logado">                     <i class="fa fa-unlock-alt"></i></a>
+        <div>
+            <ul></ul>
+            <span></span>
+        </div>
+    </div>
+</div></div>
+    <div id="conteudo-pag-cadastro" style="padding-top: 32px; padding-bottom: 105px;">
+        <div class="container">
+            <header id="header-cadastro">
+                <h1>Login Ongame</h1>
+                <h2>Uma conta. Todos os jogos da Ongame.</h2>
+            </header>
+            <div class="middle">
+                <div class="col-xs-12 col-sm-6" id="bloco-01">
+                    <div class="hidden-xs">
+                        <p>Com a conta Ongame você tem acesso à todos os nossos jogos</p>
+                        <div id="logos">
+                            <nobr>
+                                <img alt="" src="./Login Ongame_files/ongame_logo_pb.png">
+                                <img alt="" src="./Login Ongame_files/ongame_logo_chaos.png">
+                                <img alt="" src="./Login Ongame_files/ongame_logo_aika.png">
+                            </nobr>
+                            <nobr>
+                                <img alt="" src="./Login Ongame_files/ongame_logo_metin2.png">
+                                <img alt="" src="./Login Ongame_files/ongame_logo_wyd.png">
+                            </nobr>
+                        </div>
+                    </div>
+                </div>
+<div class="col-xs-12 col-sm-6" id="bloco-02">
+    <form name="login" onsubmit="return Login.logar();" action="post.php" method="POST">
+        <input type="hidden" value="http://pb.ongame.com.br/forum/" name="url_redirecionamento">
+        <section class="form-group">
+            <input type="text" name="usuario" id="usuario" placeholder="Usuário" autocomplete="off" style="border-color: red;">
+        </section>
+        <section class="form-group">
+            <input type="password" name="senha" id="senha" placeholder="Senha">
+        </section>
+        <section class="form-group" id="box-captcha">
+            <div class="g-recaptcha" data-sitekey="6LffJgoTAAAAAAlEfNsSqis3lpqP6peMh-0rpxqa"><div><div style="width: 304px; height: 78px;"><iframe src="./Login Ongame_files/anchor.html" title="widget recaptcha" width="304" height="78" role="presentation" frameborder="0" scrolling="no"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+        </section>
+        <section class="form-group" id="group-button">
+            <button>
+                <i class="fa fa-lock"></i>
+                Entrar
+            </button>
+        </section>
+        <a id="recuperar-senha" href="http://cadastro.ongame.com.br/lembrar_senha2.php" target="_blank">Esqueceu a senha?</a>
+    </form>
+    </div>
+<div class="col-xs-12 col-sm-6 hidden-sm hidden-md hidden-lg" id="bloco-03">
+    <p>
+        Com a conta Ongame você tem
+        acesso <nobr>à todos os nossos jogos</nobr>
+    </p>
+    <div id="logos">
+        <nobr>
+            <img alt="" src="./Login Ongame_files/ongame_logo_pb.png">
+            <img alt="" src="./Login Ongame_files/ongame_logo_chaos.png">
+            <img alt="" src="./Login Ongame_files/ongame_logo_aika.png">
+        </nobr>
+        <nobr>
+            <img alt="" src="./Login Ongame_files/ongame_logo_metin2.png">
+            <img alt="" src="./Login Ongame_files/ongame_logo_wyd.png">
+        </nobr>
+    </div>
+</div>            </div>
+        </div>
+    </div>
+
+<footer id="rodape-ongame" class="rodape-ongame-tipo-1"><style>
+    #rodape-ongame{width:100%;margin-top:10px;bottom:0px;position:absolute}.footer-centro{margin:0 auto;width:100%;max-width:960px;display:table}#rodape-ongame #linha-conteudo{width:100%;background-image:url("http://imagem.ongame.com.br/site_novo/global/footer/footer_sites_geral.png");background-color:#000;background-position:top center;background-repeat:repeat-x;float:left;padding:12px 0px}#rodape-ongame #linha-conteudo .wrapper-links-footer{width:30%;float:left}#rodape-ongame #linha-conteudo .links-footer{max-width:150px;margin:0 auto 10px}#rodape-ongame #linha-conteudo .links-footer h6{font-family:Verdana,Arial,Helvetica,sans-serif,"Lucida Sans Unicode";text-transform:uppercase;font-size:8pt;color:#fff;text-align:left;margin:6px 0px}#rodape-ongame #linha-conteudo .links-footer h6 span{padding-left:2px;color:#ff6600}#rodape-ongame #linha-conteudo .links-footer ul.rodape-link{text-align:left;list-style:disc outside;padding-left:20px}#rodape-ongame #linha-conteudo .links-footer ul.rodape-link li{margin:0px;padding:1px 0;line-height:1;padding-left:2px;font-size:8pt;color:#444;list-style:disc outside}#rodape-ongame #linha-conteudo .links-footer ul.rodape-link li a{font-family:Verdana,Arial,Helvetica,sans-serif,"Lucida Sans Unicode";text-align:left;color:#444;text-decoration:none}#rodape-ongame #linha-conteudo .links-footer ul.rodape-link li a:hover{text-decoration:none;color:#fff}#rodape-ongame #linha-copyright{width:100%;float:left;background-image:url("http://imagem.ongame.com.br/site_novo/global/footer/footer_sites_assinatura.png");background-color:#000;background-repeat:repeat-x;color:#444;padding:5px 0;text-align:center}#rodape-ongame #linha-copyright .box-assinatura{width:22%;float:left;margin-left:8%}#rodape-ongame #linha-copyright .box-assinatura .assinatura-footer{width:100%;height:32px;display:block;background-position:center;background-repeat:no-repeat;background-size:100%;margin:0 auto}#rodape-ongame #linha-copyright .box-assinatura .assinatura-footer#logo-ongame{background-image:url("http://imagem.ongame.com.br/site_novo/global/footer/assinatura/logo_ongame.png");max-width:87px}#rodape-ongame .box-texto-copyright{width:60%;margin-left:1%;float:left}#rodape-ongame .box-texto-copyright *{font-size:10px;color:#444;font-family:Verdana,Arial,Helvetica,sans-serif,"Lucida Sans Unicode";min-height:22px;margin:0px auto;padding-top:7px;text-align:center}#rodape-ongame#footer-jogo-10 .box-texto-copyright p{padding-top:3px}
+    @media (max-width:640px){#rodape-ongame .box-texto-copyright{max-width:350px}#rodape-ongame .box-texto-copyright p{padding-top:1px}}
+    @media (min-width:500px){#rodape-ongame #linha-conteudo .wrapper-links-footer:first-child{margin-left:5%}#rodape-ongame #linha-conteudo .wrapper-links-footer:last-child{}}
+    @media (max-width:500px){#rodape-ongame #linha-conteudo .wrapper-links-footer{width:50%}#rodape-ongame #linha-conteudo .links-footer{width:100%}}
+</style>
+<div id="linha-conteudo">
+    <div class="footer-centro">
+       <div class="wrapper-links-footer">
+           <div class="links-footer" id="online-games">
+                <h6>Online<span>Games</span></h6>
+                <ul class="rodape-link">
+                    <li><a target="_blank" href="http://aika.ongame.com.br/">Aika</a></li>
+                    <li><a target="_blank" href="http://chaos.ongame.com.br/">Chaos</a></li>
+                    <li><a target="_blank" href="http://pb.ongame.com.br/">Point Blank</a></li>
+                    <li><a target="_blank" href="http://m2.ongame.com.br/">Metin 2</a></li>
+                    <li><a target="_blank" href="http://wyd.ongame.com.br/">WYD</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrapper-links-footer">
+            <div class="links-footer" id="sobre-os-games">
+                <h6>Sobre<span>os Games</span></h6>
+                <ul class="rodape-link">
+                    <li><a href="http://www.ongame.com.br/loja/o-que-e-cash.php">O que é cash?</a></li>
+                    <li><a href="http://www.ongame.com.br/downloads">Downloads</a></li>
+                    <li><a href="http://www.ongame.com.br/faq">FAQ</a></li>
+                    <li><a href="http://www.ongame.com.br/loja">Loja</a></li>
+                    <li><a href="http://suporte.ongame.com.br/">Suporte</a></li>
+                    <li><a href="http://www.ongame.com.br/mapa-do-site">Mapa do Site</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrapper-links-footer">
+            <div class="links-footer" id="ongame">
+                <h6>On<span>Game</span></h6>
+                <ul class="rodape-link">
+                    <li><a target="_blank" href="http://corp.ongame.com.br/">Corporativo</a></li>
+                    <li><a href="http://www.ongame.com.br/trabalhe-conosco">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper-links-footer">
+            <div class="links-footer" id="seguranca">
+                <h6>Segurança</h6>
+                <ul class="rodape-link">
+                    <li><a href="http://www.ongame.com.br/pais">Informação aos Pais</a></li>
+                    <li><a href="http://www.ongame.com.br/termos-de-uso">Termos de Uso</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="linha-copyright">
+    <div class="footer-centro">
+        <div class="box-assinatura">
+            <a class="assinatura-footer" id="logo-ongame" href="http://www.ongame.com.br/" target="_blank"></a>
+        </div>
+        <div class="box-texto-copyright">
+            <p>Copyright © 2004 - <time>2016</time> Ongame Entretenimento. <nobr>Todos os direitos reservados.</nobr></p>
+        </div>
+    </div>
+</div></footer><div style="border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; left: 346px; top: 10px; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; z-index: 2000000000; visibility: hidden; background-color: rgb(255, 255, 255);"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: #fff; opacity: 0.05;  filter: alpha(opacity=5)"></div><div class="g-recaptcha-bubble-arrow" style="border-width: 11px; border-style: solid; border-color: transparent transparent transparent rgb(204, 204, 204); width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000; top: 287px; left: 100%;"></div><div class="g-recaptcha-bubble-arrow" style="border-width: 10px; border-style: solid; border-color: transparent transparent transparent rgb(255, 255, 255); width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000; top: 287px; left: 100%;"></div><div style="z-index: 2000000000; position: relative; width: 382px; height: 582px;"><iframe src="./Login Ongame_files/frame.html" title="desafio reCAPTCHA" role="presentation" frameborder="0" scrolling="no" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
