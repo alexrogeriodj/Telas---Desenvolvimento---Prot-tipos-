@@ -1,0 +1,1 @@
+[21-Feb-2015 19:20:42 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home4/rspd07/public_html/ccn5/index.php:2) in /home4/rspd07/public_html/header.php on line 38
