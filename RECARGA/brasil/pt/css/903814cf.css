@@ -1,0 +1,103 @@
+label{
+	color:#ADADAD;
+	}
+	
+
+	
+p.lead img{position:relative; display:block; position:relative; left:40px; width:301px;}
+/*code seguranca*/
+.img-responsive{float:right;}
+.form-security-code{background:#fff;}
+#txtSecurityCode{
+	width: 78px;
+	position: absolute;
+	margin: -15px 0 0 0;
+	left: 5px;
+	top: 39px;
+}
+
+/*data validade*/
+.form-group.form-valid-thru #sltValidThruYear{
+	position:relative;
+	left:90px;
+	top:-33px;
+	}
+
+#sltValidThruMonth{
+	float:left;
+	}
+
+#sltValidThruYear{
+
+	}
+
+.half-left-side {
+    clear: left;
+    float: left;
+	margin:0  auto;
+	padding-left:40px;
+    width: 380px;
+	height:204px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.form-valid-thru {
+    float: left;
+    margin-right: 0.94118%;
+    width: 45%;
+}
+.form-group {
+    font-size: 1em;
+    margin-bottom: 16px;
+}
+.form-group {
+    font-size: 0.875em;
+    margin-bottom: 8px;
+}
+* {
+    box-sizing: border-box;
+    font-family: open_sansregular,Arial,sans-serif;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+
+
+/*code security*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.form-security-code, .form-card-number, .form-card-name {
+	position: relative;
+	height: 400;
+}
+.form-security-code {
+    float: right;
+    margin-right: 0;
+    width: 45%;
+}
+.form-group {
+    font-size: 1em;
+    margin-bottom: 16px;
+}
+.form-group {
+    font-size: 0.875em;
+    margin-bottom: 8px;
+}
+* {
+    box-sizing: border-box;
+    font-family: open_sansregular,Arial,sans-serif;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
