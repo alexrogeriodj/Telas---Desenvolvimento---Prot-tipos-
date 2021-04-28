@@ -1,0 +1,3 @@
+[21-Feb-2015 03:24:29 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'checker'@'localhost' (using password: YES) in /home4/rspd07/public_html/account/register/auth.php on line 1
+[21-Feb-2015 03:25:19 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'checker'@'localhost' (using password: YES) in /home4/rspd07/public_html/account/register/auth.php on line 1
+[21-Feb-2015 03:25:31 America/Chicago] PHP Warning:  mysql_connect(): Access denied for user 'checker'@'localhost' (using password: YES) in /home4/rspd07/public_html/account/register/auth.php on line 1
